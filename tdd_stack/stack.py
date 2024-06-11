@@ -3,4 +3,4 @@ class Stack:
         pass
 
     def is_empty(self):
-        return False
+        return True
