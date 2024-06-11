@@ -19,3 +19,7 @@ class TestTddStack(unittest.TestCase):
         self.assertEqual(1, self.stack.size())
         self.stack.push(2)
         self.assertEqual(2, self.stack.size())
+
+    def test_empty_pop(self):
+        with self.assertRaises(IndexError):
+            self.stack.pop()

@@ -15,3 +15,6 @@ class Stack:
 
     def size(self):
         return self._size
+
+    def pop(self):
+        pass
