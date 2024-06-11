@@ -4,7 +4,7 @@ class Stack:
         self._size = 0
 
     def is_empty(self):
-        return True
+        return self._size == 0
 
     def push(self, value):
         self._value = value
