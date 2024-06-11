@@ -4,3 +4,9 @@ class Stack:
 
     def is_empty(self):
         return True
+
+    def push(self, value):
+        pass
+
+    def top(self):
+        pass
