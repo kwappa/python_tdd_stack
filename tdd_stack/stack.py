@@ -11,14 +11,16 @@ class Stack:
         self._size += 1
 
     def top(self):
-        if self.is_empty():
-            raise IndexError
+        self._empty_check()
         return self._value
 
     def size(self):
         return self._size
 
     def pop(self):
+        self._empty_check()
+        self._size -= 1
+
+    def _empty_check(self):
         if self.is_empty():
             raise IndexError
-        self._size -= 1
