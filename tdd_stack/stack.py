@@ -12,4 +12,4 @@ class Stack:
         return self._value
 
     def size(self):
-        pass
+        return 1
