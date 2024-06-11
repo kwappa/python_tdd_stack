@@ -12,3 +12,7 @@ class TestTddStack(unittest.TestCase):
     def test_push_and_top(self):
         self.stack.push(1)
         self.assertEqual(1, self.stack.top())
+
+    def test_push_and_size(self):
+        self.stack.push(1)
+        self.assertEqual(1, self.stack.size())

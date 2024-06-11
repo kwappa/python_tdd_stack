@@ -10,3 +10,6 @@ class Stack:
 
     def top(self):
         return self._value
+
+    def size(self):
+        pass
