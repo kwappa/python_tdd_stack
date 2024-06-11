@@ -11,6 +11,8 @@ class Stack:
         self._size += 1
 
     def top(self):
+        if self.is_empty():
+            raise IndexError
         return self._value
 
     def size(self):
