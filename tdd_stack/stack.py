@@ -17,4 +17,6 @@ class Stack:
         return self._size
 
     def pop(self):
-        raise IndexError
+        if self.is_empty():
+            raise IndexError
+        self._size -= 1
