@@ -28,3 +28,7 @@ class TestTddStack(unittest.TestCase):
         self.stack.push(1)
         self.stack.pop()
         self.assertEqual(0, self.stack.size())
+
+    def test_empty_top(self):
+        with self.assertRaises(IndexError):
+            self.stack.top()
